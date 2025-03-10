@@ -1,48 +1,44 @@
-# Quanta Project Submission Repository
+pattern recognition for XOR Problem
 
-Welcome to the Quanta Event Project Repository! This repository is designed for participants to upload and share their projects developed during the event.
+overview:
 
-## Repository Link
+This project demonstrates the use of quantum machine learning algorithms to solve the XOR problem using the VQC (Variational Quantum Classifier) model from the Qiskit framework. The model is trained using different quantum optimizers , and its performance is compared with a classical model (Logistic Regression) on the XOR dataset.
 
-🔗 [GitHub Repository](https://github.com/QForest-PES/Quanta1.0.git)
 
-## Submission Guidelines
+Features:
+1. Dataset Creation**: A simple XOR dataset is created and normalized using MinMaxScaler.
+2. Feature Map & Ansatz**: A ZZFeatureMap is used as the feature map, and an EfficientSU2 ansatz is employed.
+3. Quantum Classifiers: Two optimizers, COBYLA and SPSA, are used to train the quantum classifier.
+4. Classical Model: A classical Logistic Regression model is also trained for comparison.
+5. erformance Evaluation: The models are evaluated based on their accuracy, and decision boundaries are plotted for visualization.
 
-Follow these steps to submit your project:
+Requirements:
+Python 3.x
+Qiskit
+Qiskit Machine Learning
+scikit-learn
+matplotlib
+numpy
 
-1. **Fork this repository** to your GitHub account.
-2. **Clone your forked repository** to your local machine using:
-   ```sh
-   git clone https://github.com/YOUR-USERNAME/Quanta1.0.git
-   ```
-3. Create a new folder inside the repository with your team's name.
-4. Add your project files inside this folder. Ensure your folder includes:
-  - 📂 Source code
-  - 📜 A README.md explaining your project
-  - 📦 Any necessary dependencies or instructions
-5. Commit and push your changes .
-  ```sh
-  git add .
-  git commit -m "Added project: [Team Name]"
-  git push origin main
-  ```
-6. **Create a Pull Request (PR)** to merge your project into the main repository.
-## Folder Structure
-Each project should be inside its own directory. The structure should look like this:
-```lua
-Quanta1.0/
-|ProjectSubmissions/
-|   │-- Project-Name/
-│   |   │-- src/
-│   |   │-- README.md
-│   |   │-- requirements.txt (if applicable)
-│   |   │-- any other necessary files
-```
-## Pull Request Guidelines
-✔️ Add a meaningful title and description to your PR.
-✔️ Mention any dependencies or setup steps in your README.md.
-✔️ Ensure your code is properly formatted and documented.
-## Need Help?
-If you have any issues or questions, feel free to create an issue in the repository or reach out to the event organizers.
+usage:
+Clone the repository: Clone the repository to your local machine:
 
-🚀 Happy coding!
+bash
+Copy
+git clone https://github.com/your-username/quantum-classifier-xor.git
+cd quantum-classifier-xor
+Run the script: The script is designed to train quantum classifiers and compare them to a classical model. To run the script, simply execute:
+
+bash
+Copy
+python quantum_classifier_xor.py
+Output: The script will:
+
+Train quantum classifiers using COBYLA and SPSA optimizers.
+Compare their test accuracy with a classical Logistic Regression model.
+Plot decision boundaries for the best-performing model.
+
+contributors:
+Manasi Sabnis
+Likhitha Marella
+Shubhaditya
